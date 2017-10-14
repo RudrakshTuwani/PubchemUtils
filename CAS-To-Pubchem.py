@@ -1,4 +1,3 @@
-
 def extract_id_type(soup):
 	""" Takes a BS4 object of a puchem page as input and returns the Pubchem ID type and Pubchem ID Value """
     pubhcem_uid_type = soup.find_all('meta', {'name':'pubchem_uid_type'})[0]['content']
